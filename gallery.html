@@ -22,6 +22,18 @@
 
     <title>FOCI - Federation of Construction Industry</title>
     <link rel="icon" type="image/png" href="assets/images/fav-icon.png" />
+
+    <!-- For Gallery Section -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <link rel="stylesheet" href="assets/css/gallery.css" />
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/gallery.js"></script>
   </head>
   <body>
     <!-- Navigation area start -->
@@ -84,12 +96,12 @@
                       <a href="bot.html" class="nav-link">Board of Trustees</a>
                     </li>
                     <li class="nav-item">
-                      <a href="executivecommittee.html" class="nav-link active"
+                      <a href="executivecommittee.html" class="nav-link"
                         >Executive Committee</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a href="council.html" class="nav-link"
+                      <a href="council.html" class="nav-link active"
                         >Governing Council</a
                       >
                     </li>
@@ -150,7 +162,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="news.html" class="nav-link">Gallery/Events</a>
+                  <a href="gallery.html" class="nav-link">Gallery/Events</a>
                 </li>
 
                 <li class="nav-item">
@@ -185,12 +197,9 @@
 
     <!-- About Area Start -->
     <section class="about pt-100">
-      <div class="shape">
-        <img src="assets/images/about/shape.png" alt="image" />
-      </div>
       <div class="container">
         <div class="default-section-title default-section-title-middle mt-10">
-          <h3>Executive Committee</h3>
+          <h3>Galleries &amp; Events</h3>
           <p><br /><br /></p>
         </div>
       </div>
@@ -200,189 +209,152 @@
     <!-- Team Area Start -->
     <section class="team pt-70 pb-100">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="team-card">
-              <div class="team-card-img">
-                <img src="assets/images/team/tBarrah.jpg" alt="image" />
-                <div class="team-social-icons">
-                  <ul>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank"
-                        ><i class="fab fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/" target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/" target="_blank"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/" target="_blank"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-card-text">
-                <h4>High Chief Vincent Barrah</h4>
-                <h6>Salini Nigeria Limited</h6>
-                <p>President</p>
-              </div>
-            </div>
+        <!-- Gallery Area Start -->
+
+        <div class="row justify-content-left">
+          <!--
+          <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Gallery</h1>
+          </div>
+          -->
+
+          <div>
+            <button class="btn btn-default filter-button" data-filter="all">
+              All
+            </button>
+            <button class="btn btn-default filter-button" data-filter="AGM2023">
+              AGM 2023
+            </button>
+            <button
+              class="btn btn-default filter-button"
+              data-filter="advocacy"
+            >
+              Advocacy Visits
+            </button>
+            <button class="btn btn-default filter-button" data-filter="fsa">
+              FOCI Skills Academy
+            </button>
+            <button class="btn btn-default filter-button" data-filter="trips">
+              Trips
+            </button>
+            <button class="btn btn-default filter-button" data-filter="others">
+              Others
+            </button>
+          </div>
+          <br />
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter advocacy"
+          >
+            <img
+              src="assets/images/gallery/advocayvisit02.jpg"
+              class="img-responsive"
+            />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter AGM2023"
+          >
+            <img
+              src="assets/images/gallery/council2023-01.jpg"
+              class="img-responsive"
+            />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter others"
+          >
+            <img
+              src="assets/images/gallery/2023-01.jpg"
+              class="img-responsive"
+            />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter advocacy"
+          >
+            <img
+              src="assets/images/gallery/advocayvisit01.jpg"
+              class="img-responsive"
+            />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter fsa"
+          >
+            <img src="assets/images/gallery/fsa01.jpg" class="img-responsive" />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter others"
+          >
+            <img
+              src="assets/images/gallery/2023-02.jpg"
+              class="img-responsive"
+            />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter fsa"
+          >
+            <img src="assets/images/gallery/fsa02.jpg" class="img-responsive" />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter trips"
+          >
+            <img
+              src="assets/images/gallery/germany01.jpg"
+              class="img-responsive"
+            />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter fsa"
+          >
+            <img src="assets/images/gallery/fsa03.jpg" class="img-responsive" />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter advocacy"
+          >
+            <img
+              src="assets/images/gallery/advocayvisit03.jpg"
+              class="img-responsive"
+            />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter fsa"
+          >
+            <img src="assets/images/gallery/fsa04.jpg" class="img-responsive" />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter trips"
+          >
+            <img
+              src="assets/images/gallery/germany03.jpg"
+              class="img-responsive"
+            />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter fsa"
+          >
+            <img src="assets/images/gallery/fsa05.jpg" class="img-responsive" />
+          </div>
+
+          <div
+            class="gallery_product col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 filter trips"
+          >
+            <img
+              src="assets/images/gallery/germany02.jpg"
+              class="img-responsive"
+            />
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="team-card">
-              <div class="team-card-img">
-                <img src="assets/images/team/tOkoroafor.jpg" alt="image" />
-                <div class="team-social-icons">
-                  <ul>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank"
-                        ><i class="fab fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/" target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/" target="_blank"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/" target="_blank"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-card-text">
-                <h4>Barr. Emeka Okoroafor</h4>
-                <h6>Setraco Nigeria Limited</h6>
-                <p>Deputy President</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="team-card">
-              <div class="team-card-img">
-                <img src="assets/images/team/tAbe.jpg" alt="image" />
-                <div class="team-social-icons">
-                  <ul>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank"
-                        ><i class="fab fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/" target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/" target="_blank"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/" target="_blank"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-card-text">
-                <h4>Mr. Patrick Abe</h4>
-                <h6>ITB Nigeria Limited</h6>
-                <p>Vice President</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="team-card">
-              <div class="team-card-img">
-                <img src="assets/images/team/tNdakpayi.jpg" alt="image" />
-                <div class="team-social-icons">
-                  <ul>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank"
-                        ><i class="fab fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/" target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/" target="_blank"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/" target="_blank"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-card-text">
-                <h4>Alh. Abubakar Ndakpayi</h4>
-                <h6>P.W. Nigeria Limited</h6>
-                <p>Treasurer</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="team-card">
-              <div class="team-card-img">
-                <img src="assets/images/team/tOlubunmi.jpg" alt="image" />
-                <div class="team-social-icons">
-                  <ul>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank"
-                        ><i class="fab fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/" target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/" target="_blank"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/" target="_blank"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-card-text">
-                <h4>Engr. Mrs Olubunmi Adekoje</h4>
-                <p>Director General/Secretary</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Gallery Area End -->
       </div>
     </section>
     <!-- Team Area End -->
