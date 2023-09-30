@@ -22,6 +22,35 @@
 
     <title>FOCI - Federation of Construction Industry</title>
     <link rel="icon" type="image/png" href="assets/images/fav-icon.png" />
+
+    <!-- For Gallery Section -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <link rel="stylesheet" href="assets/css/gallery.css" />
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/gallery.js"></script>
+
+    <!-- For Fancybox Section -->
+    <script src="assets/css/fancybox.css"></script>
+    <script src="assets/js/fancybox.js"></script>
+
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
   </head>
   <body>
     <!-- Navigation area start -->
@@ -65,9 +94,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="#" class="nav-link dropdown-toggle active"
-                    >About Us</a
-                  >
+                  <a href="#" class="nav-link dropdown-toggle">About Us</a>
                   <ul class="dropdown-menu">
                     <li class="nav-item">
                       <a href="ourhistory.html" class="nav-link">Our History</a>
@@ -84,7 +111,7 @@
                       <a href="bot.html" class="nav-link">Board of Trustees</a>
                     </li>
                     <li class="nav-item">
-                      <a href="executivecommittee.html" class="nav-link active"
+                      <a href="executivecommittee.html" class="nav-link"
                         >Executive Committee</a
                       >
                     </li>
@@ -97,11 +124,13 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="#" class="nav-link dropdown-toggle">Membership</a>
+                  <a href="#" class="nav-link dropdown-toggle active"
+                    >Membership</a
+                  >
                   <ul class="dropdown-menu">
                     <li class="nav-item">
                       <a href="membercategories.html" class="nav-link"
-                        >Membership Categories</a
+                        >Member Categories</a
                       >
                     </li>
                     <li class="nav-item">
@@ -115,7 +144,7 @@
                       >
                     </li>
                     <li class="nav-item">
-                      <a href="directory.html" class="nav-link"
+                      <a href="directory.html" class="nav-link active"
                         >Member Directory</a
                       >
                     </li>
@@ -155,7 +184,9 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="gallery.html" class="nav-link">Gallery/Events</a>
+                  <a href="gallery.html" class="nav-link acive"
+                    >Gallery/Events</a
+                  >
                 </li>
 
                 <li class="nav-item">
@@ -190,207 +221,368 @@
 
     <!-- About Area Start -->
     <section class="about pt-100">
-      <div class="shape">
-        <img src="assets/images/about/shape.png" alt="image" />
-      </div>
       <div class="container">
         <div class="default-section-title default-section-title-middle mt-10">
-          <h3>Executive Committee</h3>
+          <h3>List of FOCI Members</h3>
           <p><br /><br /></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <table class="table table-striped table-hover table-bordered">
+              <caption>
+                <em>FOCI Membership Directory, &copy;2023</em>
+              </caption>
+              <thead class="table-dark">
+                <tr>
+                  <th scope="col" style="width: 8%">#</th>
+                  <th scope="col">Member</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>A.G. Ferrero & Company Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Almog Engineering Ltd</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>A &amp; K Construction Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Arab Contractors O.A.O. Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>ARBICO PLC</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>AVN Global Ventures Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Bouygues Constr. Nig. Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>B. Stabilini & Company Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Beaumont Industrial Services And Solutions Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Borini Prono & Company Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>Brunelli Construction Co. (Nig) Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>Bulet International Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">13</th>
+                  <td>Cappa and D'Alberto Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">14</th>
+                  <td>Clay Industry Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">15</th>
+                  <td>Construction Kaiser Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">16</th>
+                  <td>C &amp; C Construction Company Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">17</th>
+                  <td>Comfort Architectural Finishing Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">18</th>
+                  <td>Coyne et Bellier Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">19</th>
+                  <td>D & M Link Ventures</td>
+                </tr>
+                <tr>
+                  <th scope="row">20</th>
+                  <td>Dantata & Sawoe Construction Co. Nig. Ltd</td>
+                </tr>
+                <tr>
+                  <th scope="row">21</th>
+                  <td>Dredging International Services Nigeria Ltd.</td>
+                </tr>
+                <tr>
+                  <th scope="row">22</th>
+                  <td>Dumez Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">23</th>
+                  <td>Dutum Company Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">24</th>
+                  <td>El Alan Constr. Company Nig. Ltd</td>
+                </tr>
+                <tr>
+                  <th scope="row">25</th>
+                  <td>Elektrint Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">26</th>
+                  <td>Energobuilding Construction Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">27</th>
+                  <td>ETCO Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">28</th>
+                  <td>Foundation Systems Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">29</th>
+                  <td>Giab Construction Co. Ltd</td>
+                </tr>
+                <tr>
+                  <th scope="row">30</th>
+                  <td>Gilmor Eng. Nigeria Ltd.</td>
+                </tr>
+                <tr>
+                  <th scope="row">31</th>
+                  <td>Gitto Costruzioni Generali Nig. Ltd</td>
+                </tr>
+                <tr>
+                  <th scope="row">32</th>
+                  <td>Greenville Oil & Gas Co. Ltd</td>
+                </tr>
+                <tr>
+                  <th scope="row">33</th>
+                  <td>Hitech Construction Co. Ltd</td>
+                </tr>
+                <tr>
+                  <th scope="row">34</th>
+                  <td>Horatio Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">35</th>
+                  <td>Horizon Construction Co. Ltd</td>
+                </tr>
+                <tr>
+                  <th scope="row">36</th>
+                  <td>Hortigraph Nig. Ltd.</td>
+                </tr>
+                <tr>
+                  <th scope="row">37</th>
+                  <td>Inter-Bau Construction Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">38</th>
+                  <td>ITB Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">39</th>
+                  <td>Jite Projekts Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">40</th>
+                  <td>JKN Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">41</th>
+                  <td>Julius Berger Nig. PLC</td>
+                </tr>
+                <tr>
+                  <th scope="row">42</th>
+                  <td>Kamen Aggregates & Constr. Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">43</th>
+                  <td>Lakaar Eng. & Constr Ltd.</td>
+                </tr>
+                <tr>
+                  <th scope="row">44</th>
+                  <td>Layher Nigeria</td>
+                </tr>
+                <tr>
+                  <th scope="row">45</th>
+                  <td>Lubell Nig. Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">46</th>
+                  <td>Levant Construction Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">47</th>
+                  <td>Mikano International Ltd.</td>
+                </tr>
+                <tr>
+                  <th scope="row">48</th>
+                  <td>Monterosa Construction Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">49</th>
+                  <td>Mothercat Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">50</th>
+                  <td>MOS Engineering Services Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">51</th>
+                  <td>Moulds Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">52</th>
+                  <td>Nairda Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">53</th>
+                  <td>Nigerian Westminster Dredging & Marine Ltd.</td>
+                </tr>
+                <tr>
+                  <th scope="row">54</th>
+                  <td>Nigerite Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">55</th>
+                  <td>Pan African Equipment Nig. Ltd</td>
+                </tr>
+                <tr>
+                  <th scope="row">56</th>
+                  <td>Peri Formwork & Scaffolding Nig. Ltd.</td>
+                </tr>
+                <tr>
+                  <th scope="row">57</th>
+                  <td>President Paints Nig. Ltd</td>
+                </tr>
+                <tr>
+                  <th scope="row">58</th>
+                  <td>PRODECO (Property Development Co.) Ltd</td>
+                </tr>
+                <tr>
+                  <th scope="row">59</th>
+                  <td>P.W. Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">60</th>
+                  <td>R.C.C. Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">61</th>
+                  <td>Ringardas Nigeria limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">62</th>
+                  <td>Roads Nigeria PLC</td>
+                </tr>
+                <tr>
+                  <th scope="row">63</th>
+                  <td>Sana Global Projects Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">64</th>
+                  <td>Sageto Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">65</th>
+                  <td>Saipem Contracting Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">66</th>
+                  <td>Salini Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">67</th>
+                  <td>Samstar Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">68</th>
+                  <td>Sarplast (West Africa) Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">69</th>
+                  <td>S.C.C. Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">70</th>
+                  <td>Setraco Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">71</th>
+                  <td>S &amp; M Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">72</th>
+                  <td>Stellar Construction Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">73</th>
+                  <td>Structural Skyline Ltd.</td>
+                </tr>
+                <tr>
+                  <th scope="row">74</th>
+                  <td>Tectonics Engineering And Consult Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">75</th>
+                  <td>Telisol Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">76</th>
+                  <td>Triacta Nig. Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">77</th>
+                  <td>Trevi Foundation (Nigeria) Ltd.</td>
+                </tr>
+                <tr>
+                  <th scope="row">78</th>
+                  <td>Van Oord Nigeria Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row">79</th>
+                  <td>Vitapur Nig. Ltd.</td>
+                </tr>
+                <tr>
+                  <th scope="row">80</th>
+                  <td>Zeberced Limited</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-2"></div>
         </div>
       </div>
     </section>
     <!-- About Area end -->
 
-    <!-- Team Area Start -->
+    <!-- Directory Area Start -->
     <section class="team pt-70 pb-100">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="team-card">
-              <div class="team-card-img">
-                <img src="assets/images/team/tBarrah.jpg" alt="image" />
-                <div class="team-social-icons">
-                  <ul>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank"
-                        ><i class="fab fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/" target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/" target="_blank"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/" target="_blank"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-card-text">
-                <h4>High Chief Vincent Barrah</h4>
-                <h6>Salini Nigeria Limited</h6>
-                <p>President</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="team-card">
-              <div class="team-card-img">
-                <img src="assets/images/team/tOkoroafor.jpg" alt="image" />
-                <div class="team-social-icons">
-                  <ul>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank"
-                        ><i class="fab fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/" target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/" target="_blank"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/" target="_blank"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-card-text">
-                <h4>Barr. Emeka Okoroafor</h4>
-                <h6>Setraco Nigeria Limited</h6>
-                <p>Deputy President</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="team-card">
-              <div class="team-card-img">
-                <img src="assets/images/team/tAbe.jpg" alt="image" />
-                <div class="team-social-icons">
-                  <ul>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank"
-                        ><i class="fab fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/" target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/" target="_blank"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/" target="_blank"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-card-text">
-                <h4>Mr. Patrick Abe</h4>
-                <h6>ITB Nigeria Limited</h6>
-                <p>Vice President</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="team-card">
-              <div class="team-card-img">
-                <img src="assets/images/team/tNdakpayi.jpg" alt="image" />
-                <div class="team-social-icons">
-                  <ul>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank"
-                        ><i class="fab fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/" target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/" target="_blank"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/" target="_blank"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-card-text">
-                <h4>Alh. Abubakar Ndakpayi</h4>
-                <h6>P.W. Nigeria Limited</h6>
-                <p>Treasurer</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="team-card">
-              <div class="team-card-img">
-                <img src="assets/images/team/tOlubunmi.jpg" alt="image" />
-                <div class="team-social-icons">
-                  <ul>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank"
-                        ><i class="fab fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/" target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/" target="_blank"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/" target="_blank"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-card-text">
-                <h4>Engr. Mrs Olubunmi Adekoje</h4>
-                <p>Director General/Secretary</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="container"></div>
     </section>
-    <!-- Team Area End -->
+    <!-- Directory Area End -->
 
     <!-- Team Area Start -->
     <section class="team ptb-100"></section>
@@ -575,5 +767,7 @@
     <script src="assets/js/appear.min.js"></script>
     <script src="assets/js/odometer.min.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
   </body>
 </html>
