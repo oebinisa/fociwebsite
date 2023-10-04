@@ -59,8 +59,8 @@ This files table contents are outlined below>>>>>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
-  --fontFamily: "Montserrat", sans-serif;
-  --fontFamily2: "Roboto", sans-serif;
+  --fontFamily: 'Montserrat', sans-serif;
+  --fontFamily2: 'Roboto', sans-serif;
   --mainColor: #00aa55;
   --secondColor: #00aa5530;
   --whiteColor: #ffffff;
@@ -69,28 +69,17 @@ This files table contents are outlined below>>>>>
   --card-title-fontSize: 22px;
   --fontSize: 16px;
   --transition: 0.5s;
-  --boxShadow: rgba(80, 79, 79, 0.1) 0px 0px 16px;
+  --boxShadow:  rgba(80, 79, 79, 0.1) 0px 0px 16px;
 }
 
 body {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: var(--fontFamily);
 }
 
@@ -110,7 +99,7 @@ a:hover {
 :focus {
   outline: 0 !important;
   -webkit-box-shadow: none !important;
-  box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 img {
@@ -206,9 +195,9 @@ p:last-child {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+          animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 
 .plr-100 {
@@ -390,7 +379,7 @@ a.meanmenu-reveal {
   top: 50%;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   color: var(--mainColor);
   text-decoration: none;
   font-size: 16px;
@@ -572,8 +561,8 @@ a.meanmenu-reveal {
 
 .main-nav nav .navbar-nav .nav-item a {
   padding: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
   position: relative;
   color: var(--blackColor);
   font-size: 15px;
@@ -602,7 +591,7 @@ a.meanmenu-reveal {
 }
 
 .main-nav nav .navbar-nav .nav-item a.dropdown-toggle::after {
-  content: "\f107";
+  content: '\f107';
   font-family: "Font Awesome 5 Free";
   position: absolute;
   top: 2px;
@@ -624,7 +613,7 @@ a.meanmenu-reveal {
 .main-nav nav .navbar-nav .nav-item:hover ul {
   opacity: 1;
   -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
+          transform: rotateY(0deg);
   visibility: visible;
 }
 
@@ -640,14 +629,14 @@ a.meanmenu-reveal {
   visibility: hidden;
   position: absolute;
   -webkit-transform: rotateX(-20deg);
-  transform: rotateX(-20deg);
+          transform: rotateX(-20deg);
   -webkit-transform-origin: top;
-  transform-origin: top;
+          transform-origin: top;
   background: var(--whiteColor);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   padding-top: 10px;
   padding-left: 0px;
   padding-right: 0px;
@@ -674,32 +663,30 @@ a.meanmenu-reveal {
   position: absolute;
   right: 10px !important;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a::before {
-  content: "\f0da";
+  content: '\f0da';
   font-size: 0px;
   font-weight: 600;
   color: var(--mainColor);
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
   position: absolute;
   top: 50%;
   left: 10px;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: 99;
 }
 
-.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover,
-.main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover, .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
   color: var(--mainColor);
   padding-left: 25px;
 }
 
-.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover::before,
-.main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active::before {
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover::before, .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active::before {
   font-size: 15px;
 }
 
@@ -711,15 +698,7 @@ a.meanmenu-reveal {
   visibility: hidden !important;
 }
 
-.main-nav
-  nav
-  .navbar-nav
-  .nav-item
-  .dropdown-menu
-  li
-  .dropdown-menu
-  li
-  .dropdown-menu {
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
   top: 20px;
   left: 100%;
   position: absolute;
@@ -731,16 +710,7 @@ a.meanmenu-reveal {
   color: var(--blackColor);
 }
 
-.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover,
-.main-nav
-  nav
-  .navbar-nav
-  .nav-item
-  .dropdown-menu
-  li
-  .dropdown-menu
-  li
-  a.active {
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
   color: var(--mainColor);
 }
 
@@ -750,15 +720,7 @@ a.meanmenu-reveal {
   top: -5px !important;
 }
 
-.main-nav
-  nav
-  .navbar-nav
-  .nav-item
-  .dropdown-menu
-  li:hover
-  .dropdown-menu
-  li:hover
-  .dropdown-menu {
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu li:hover .dropdown-menu {
   opacity: 1 !important;
   visibility: visible !important;
   top: -5px !important;
@@ -811,8 +773,8 @@ a.meanmenu-reveal {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-sidebar ul li {
@@ -867,11 +829,11 @@ a.meanmenu-reveal {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--whiteColor);
   background-color: var(--mainColor);
   position: absolute;
@@ -902,8 +864,8 @@ Popup Area CSS
   border: 0px;
   font-size: 18px;
   border-radius: 0px;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: transparent;
   color: var(--blackColor);
   width: 50px;
@@ -947,7 +909,7 @@ Popup Area CSS
   visibility: hidden;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .popup .popup-content form .search-box {
@@ -973,10 +935,10 @@ Popup Area CSS
 }
 
 .popup .hi {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
   opacity: 1;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -995,8 +957,8 @@ Header Responsive Area CSS
 @media only screen and (max-width: 767px) {
   .topbar-right-side {
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .topbar-left-side {
     text-align: center;
@@ -1010,8 +972,8 @@ Header Responsive Area CSS
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .topbar-right-area {
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .topbar-right-area ul {
     text-align: center;
@@ -1062,7 +1024,7 @@ Header Responsive Area CSS
     max-height: 64vh;
     overflow-y: scroll;
     -webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
     /* width */
     /* Track */
     /* Handle */
@@ -1129,7 +1091,7 @@ Header Responsive Area CSS
 }
 
 .footer::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   background-color: rgba(15, 18, 33, 0.95);
@@ -1139,7 +1101,7 @@ Header Responsive Area CSS
   z-index: 0;
 }
 
-.footer .container .containerh {
+.footer .container {
   position: relative;
   z-index: 1;
 }
@@ -1177,11 +1139,11 @@ Header Responsive Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--mainColor);
   background-color: var(--whiteColor);
 }
@@ -1201,7 +1163,7 @@ Header Responsive Area CSS
 }
 
 .footer-links h3::before {
-  content: "";
+  content: '';
   width: 30%;
   height: 1px;
   background-color: var(--mainColor);
@@ -1415,7 +1377,7 @@ Go Top CSS
   visibility: visible;
   bottom: 65px;
   -webkit-animation: top-bottom 5s infinite linear;
-  animation: top-bottom 5s infinite linear;
+          animation: top-bottom 5s infinite linear;
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a::before {
@@ -1431,8 +1393,8 @@ Default button Area CSS
   border-radius: 0px;
   position: relative;
   display: inline-block;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   border: 1px solid var(--mainColor);
   overflow: hidden !important;
   color: var(--whiteColor);
@@ -1444,19 +1406,19 @@ Default button Area CSS
 }
 
 .default-button i {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   font-size: 15px !important;
   margin-left: 5px;
 }
 
 .default-button::before {
-  content: "";
+  content: '';
   width: 0px;
   height: 100%;
   overflow: hidden;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: var(--mainColor);
   position: absolute;
   right: 0;
@@ -1464,7 +1426,7 @@ Default button Area CSS
   top: 0;
   z-index: 0;
   -webkit-transform-origin: right;
-  transform-origin: right;
+          transform-origin: right;
 }
 
 .default-button span {
@@ -1584,8 +1546,7 @@ Index 01 Banner Area CSS
   max-width: 850px;
 }
 
-.banner-text-area-1 h1,
-.banner-text-area-1 p {
+.banner-text-area-1 h1, .banner-text-area-1 p {
   color: var(--blackColor);
 }
 
@@ -1607,20 +1568,20 @@ Index 01 Banner Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--mainColor);
   -webkit-animation: pulse 2s infinite linear forwards;
-  animation: pulse 2s infinite linear forwards;
+          animation: pulse 2s infinite linear forwards;
   background-color: var(--whiteColor);
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   padding-left: 7.5px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -1639,7 +1600,7 @@ Index 01 Banner Area CSS
 }
 
 .main-banner::before {
-  content: "";
+  content: '';
   height: 100%;
   width: 30%;
   background-size: cover;
@@ -1652,7 +1613,7 @@ Index 01 Banner Area CSS
 }
 
 .main-banner::after {
-  content: "";
+  content: '';
   height: 100%;
   width: 30%;
   background-color: rgba(0, 0, 0, 0.9);
@@ -1666,9 +1627,9 @@ Index 01 Banner Area CSS
   right: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transform-origin: center;
-  transform-origin: center;
+          transform-origin: center;
   z-index: 1;
 }
 
@@ -1688,15 +1649,15 @@ Index 01 Banner Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--mainColor);
   border: 1px solid #3d2828;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .main-banner .banner-social-icons ul a:hover {
@@ -1713,9 +1674,9 @@ Index 01 Banner Area CSS
   left: 3%;
   top: 50%;
   -webkit-transform: translateY(-50%) rotate(-90deg);
-  transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
   -webkit-transform-origin: left center;
-  transform-origin: left center;
+          transform-origin: left center;
 }
 
 .main-banner .banner-comment a {
@@ -1727,7 +1688,7 @@ Index 01 Services Area CSS
 =================================================*/
 .service-card {
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
   margin-top: 30px;
 }
 
@@ -1736,7 +1697,7 @@ Index 01 Services Area CSS
 }
 
 .service-card .service-card-img::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 30px;
   background-color: var(--whiteColor);
@@ -1754,17 +1715,17 @@ Index 01 Services Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--mainColor);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: var(--whiteColor);
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
   position: absolute;
   bottom: 0;
   left: 30px;
@@ -1772,18 +1733,18 @@ Index 01 Services Area CSS
 }
 
 .service-card .service-card-img i::after {
-  content: "";
+  content: '';
   width: 0%;
   height: 0%;
   border-radius: 50%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: var(--mainColor);
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 0;
 }
 
@@ -1809,7 +1770,7 @@ Index 01 Services Area CSS
 
 .service-card:hover .service-card-img i {
   -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+          transform: rotateY(180deg);
   color: var(--whiteColor);
 }
 
@@ -1829,17 +1790,17 @@ Index 01 Services Area CSS
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .service-slider-area-1 .owl-nav button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   -webkit-box-shadow: 0px 0px 20px -3px #d6d6d6;
-  box-shadow: 0px 0px 20px -3px #d6d6d6;
+          box-shadow: 0px 0px 20px -3px #d6d6d6;
   color: var(--mainColor) !important;
   background-color: var(--whiteColor) !important;
 }
@@ -1912,12 +1873,12 @@ Index 01 Who We Are Area CSS
 }
 
 .why-we-text-area .why-we-text-list ul li::before {
-  content: "";
+  content: '';
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   border: 2px solid var(--mainColor);
   background-color: var(--mainColor);
   position: absolute;
@@ -1941,7 +1902,7 @@ Index 01 Fun Facts Area CSS
 }
 
 .fun-facts-1::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
@@ -1951,7 +1912,7 @@ Index 01 Fun Facts Area CSS
   z-index: 0;
 }
 
-.fun-facts-1 .container .containerh {
+.fun-facts-1 .container {
   position: relative;
   z-index: 1;
 }
@@ -1963,7 +1924,7 @@ Index 01 Fun Facts Area CSS
 }
 
 .fun-facts-card::before {
-  content: "";
+  content: '';
   width: 1px;
   height: 80%;
   background-color: rgba(0, 170, 85, 0.5);
@@ -1971,7 +1932,7 @@ Index 01 Fun Facts Area CSS
   top: 50%;
   right: 20px;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .fun-facts-card i {
@@ -1983,14 +1944,14 @@ Index 01 Fun Facts Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--mainColor);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: var(--whiteColor);
   position: absolute;
   left: 0;
@@ -2016,9 +1977,9 @@ Index 01 Fun Facts Area CSS
 
 .fun-facts-card:hover i {
   -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+          transform: rotateY(180deg);
   -webkit-transform-origin: center;
-  transform-origin: center;
+          transform-origin: center;
   color: var(--whiteColor);
   background-color: var(--mainColor);
 }
@@ -2036,19 +1997,12 @@ Index 01 Upcoming Events Area CSS
 }
 
 .events-card::before {
-  content: "";
+  content: '';
   width: 0%;
   height: 100%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#000000),
-    color-stop(#000000b7),
-    to(#00000020)
-  );
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(#000000b7), to(#00000020));
   background-image: linear-gradient(to top, #000000, #000000b7, #00000020);
   position: absolute;
   left: 0;
@@ -2056,8 +2010,8 @@ Index 01 Upcoming Events Area CSS
 }
 
 .events-card .events-card-text {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   padding: 30px 25px;
   position: absolute;
   opacity: 0;
@@ -2130,8 +2084,8 @@ Index 01 Upcoming Events Area CSS
 
 .events-card:hover .events-card-text {
   opacity: 1;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
 }
 
 .events-slider-area {
@@ -2145,17 +2099,17 @@ Index 01 Upcoming Events Area CSS
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .events-slider-area .owl-nav button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   -webkit-box-shadow: 0px 0px 20px -3px #d6d6d6;
-  box-shadow: 0px 0px 20px -3px #d6d6d6;
+          box-shadow: 0px 0px 20px -3px #d6d6d6;
   color: var(--mainColor) !important;
   background-color: var(--whiteColor) !important;
 }
@@ -2228,12 +2182,12 @@ Index 01 Explore Events Area CSS
 }
 
 .explore-events-text-area .explore-events-text-list ul li::before {
-  content: "";
+  content: '';
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   border: 2px solid var(--mainColor);
   background-color: var(--mainColor);
   position: absolute;
@@ -2256,7 +2210,7 @@ Index 01 Feedback Area CSS
   padding: 30px;
   margin-top: 30px;
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
   background-color: var(--whiteColor);
   position: relative;
   border-radius: 5px;
@@ -2285,8 +2239,8 @@ Index 01 Feedback Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .feedback-card .feedback-intro-area img {
@@ -2332,17 +2286,17 @@ Index 01 Feedback Area CSS
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .feedback-slider-area .owl-nav button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   -webkit-box-shadow: 0px 0px 20px -3px #d6d6d6;
-  box-shadow: 0px 0px 20px -3px #d6d6d6;
+          box-shadow: 0px 0px 20px -3px #d6d6d6;
   color: var(--mainColor) !important;
   background-color: var(--whiteColor) !important;
 }
@@ -2368,19 +2322,12 @@ Index 01 team Area CSS
 }
 
 .team-card .team-card-img::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 0%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#000000),
-    color-stop(#00000050),
-    to(#00000000)
-  );
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(#00000050), to(#00000000));
   background-image: linear-gradient(to top, #000000, #00000050, #00000000);
   position: absolute;
   left: 0;
@@ -2391,8 +2338,8 @@ Index 01 team Area CSS
 .team-card .team-card-img .team-social-icons {
   width: 100%;
   opacity: 0;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   text-align: center;
   position: absolute;
   bottom: 0px;
@@ -2417,14 +2364,14 @@ Index 01 team Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--mainColor);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: var(--whiteColor);
 }
 
@@ -2454,8 +2401,8 @@ Index 01 team Area CSS
 }
 
 .team-card:hover .team-card-img .team-social-icons {
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
   bottom: 25px;
   opacity: 1;
 }
@@ -2468,7 +2415,7 @@ Index 01 Process Area CSS
   padding: 30px 25px 25px;
   background-color: var(--whiteColor);
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
   position: relative;
   padding-left: 105px;
 }
@@ -2482,16 +2429,16 @@ Index 01 Process Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--mainColor);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
   background-color: var(--whiteColor);
   position: absolute;
   left: 25px;
@@ -2505,9 +2452,9 @@ Index 01 Process Area CSS
 
 .process-card:hover i {
   -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+          transform: rotateY(180deg);
   -webkit-transform-origin: center;
-  transform-origin: center;
+          transform-origin: center;
   color: var(--whiteColor);
   background-color: var(--mainColor);
 }
@@ -2525,14 +2472,14 @@ Index 01 Blog Area CSS
 
 .blog-card .blog-card-img img {
   width: 100%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .blog-card .blog-card-text-area {
   padding: 30px 25px;
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
   background-color: var(--whiteColor);
 }
 
@@ -2549,7 +2496,7 @@ Index 01 Blog Area CSS
 
 .blog-card:hover .blog-card-img img {
   -webkit-transform: scale(1.1) rotate(2deg);
-  transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
 }
 
 .blog-date ul {
@@ -2580,7 +2527,7 @@ Index 01 Blog Area CSS
 }
 
 .blog-date ul li::before {
-  content: "/";
+  content: '/';
   position: absolute;
   right: -12px;
 }
@@ -2607,7 +2554,7 @@ Index 02 Banner Area CSS
 }
 
 .home-banner-area::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 50%;
   background-color: var(--whiteColor);
@@ -2628,15 +2575,13 @@ Index 02 Banner Area CSS
 Index 02 Process Area CSS
 =================================================*/
 .process-card-2 {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
-.process-card-2 h4,
-.process-card-2 a,
-.process-card-2 p {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+.process-card-2 h4, .process-card-2 a, .process-card-2 p {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .process-card-2:hover {
@@ -2648,9 +2593,7 @@ Index 02 Process Area CSS
   background-color: var(--whiteColor);
 }
 
-.process-card-2:hover h4,
-.process-card-2:hover a,
-.process-card-2:hover p {
+.process-card-2:hover h4, .process-card-2:hover a, .process-card-2:hover p {
   color: var(--whiteColor);
 }
 
@@ -2691,8 +2634,7 @@ Index 02 About Area CSS
 /*================================================
 Index 02 Services Area CSS
 =================================================*/
-.service-2 .default-section-title h3,
-.service-2 .default-section-title p {
+.service-2 .default-section-title h3, .service-2 .default-section-title p {
   color: var(--whiteColor);
 }
 
@@ -2711,16 +2653,16 @@ Index 02 Services Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--mainColor);
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+          box-shadow: var(--boxShadow);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: var(--whiteColor);
   position: relative;
   margin-top: -40px;
@@ -2739,7 +2681,7 @@ Index 02 Services Area CSS
 
 .service-card-2:hover i {
   -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+          transform: rotateY(180deg);
   color: var(--whiteColor);
   background-color: var(--mainColor);
 }
@@ -2755,15 +2697,15 @@ Index 02 Services Area CSS
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .service-slider-area .owl-nav button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   color: var(--mainColor) !important;
   background-color: var(--whiteColor) !important;
 }
@@ -2785,7 +2727,7 @@ Index 02 Video Area CSS
 }
 
 .video::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 50%;
   background-color: #222222;
@@ -2808,20 +2750,20 @@ Index 02 Video Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--mainColor);
   background-color: var(--whiteColor);
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -webkit-animation: pulse 2s infinite linear forwards;
-  animation: pulse 2s infinite linear forwards;
+          animation: pulse 2s infinite linear forwards;
   padding-left: 10px;
 }
 
@@ -2830,7 +2772,7 @@ Index 02 Fun Facts Area CSS
 =================================================*/
 .fun-facts-card-2 i {
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
 }
 
 .fun-facts-card-2 h2 {
@@ -2872,7 +2814,7 @@ Index 02 Feedback Area CSS
   padding: 30px;
   margin-top: 30px;
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
   background-color: var(--whiteColor);
   position: relative;
 }
@@ -2900,8 +2842,8 @@ Index 02 Feedback Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .feedback-card-2 .feedback-intro-area img {
@@ -2910,8 +2852,8 @@ Index 02 Feedback Area CSS
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   border: 2px solid var(--blackColor);
 }
 
@@ -2923,8 +2865,8 @@ Index 02 Feedback Area CSS
 
 .feedback-card-2 .feedback-intro-area span {
   color: var(--blackColor);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   font-size: 14px;
   font-family: var(--fontFamily2);
 }
@@ -2946,8 +2888,8 @@ Index 02 Feedback Area CSS
   height: 12px;
   margin: 0px 3px;
   border-radius: 50%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   border: 1px solid var(--blackColor) !important;
 }
 
@@ -2988,20 +2930,20 @@ Index 03 Banner Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--whiteColor);
   -webkit-animation: pulse 2s infinite linear forwards;
-  animation: pulse 2s infinite linear forwards;
+          animation: pulse 2s infinite linear forwards;
   background-color: var(--mainColor);
   position: absolute;
   top: 50%;
   left: 3%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   padding-left: 10px;
 }
 
@@ -3074,7 +3016,7 @@ Inner Area CSS
 }
 
 .uni-banner::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -3121,7 +3063,7 @@ Inner Area CSS
 }
 
 .uni-banner-text-area ul li::after {
-  content: "\f105";
+  content: '\f105';
   font-size: 12px;
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
@@ -3129,7 +3071,7 @@ Inner Area CSS
   right: -18px;
   top: 55%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .uni-banner-text-area ul li:last-child::after {
@@ -3152,7 +3094,7 @@ Inner Service area CSS
 }
 
 .service-4::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -3162,13 +3104,12 @@ Inner Service area CSS
   z-index: 0;
 }
 
-.service-4 .container .containerh {
+.service-4 .container {
   position: relative;
   z-index: 1;
 }
 
-.service-4 .default-section-title h3,
-.service-4 .default-section-title p {
+.service-4 .default-section-title h3, .service-4 .default-section-title p {
   color: var(--whiteColor);
 }
 
@@ -3197,7 +3138,7 @@ FAQ Area CSS
   position: relative;
   color: var(--blackColor) !important;
   -webkit-box-shadow: none !important;
-  box-shadow: none !important;
+          box-shadow: none !important;
   background-color: var(--whiteColor);
   padding: 15px 15px 15px 65px;
   border-radius: 5px !important;
@@ -3214,14 +3155,14 @@ FAQ Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #ffffff;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: #020202;
   position: absolute;
   left: 0px;
@@ -3242,7 +3183,7 @@ FAQ Area CSS
 
 .faq .accordion-button:not(.collapsed) i {
   -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+          transform: rotateY(180deg);
   background-color: var(--mainColor);
 }
 
@@ -3272,18 +3213,18 @@ FAQ Area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--mainColor);
   background-color: var(--whiteColor);
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   padding-left: 10px;
 }
 
@@ -3326,11 +3267,11 @@ Pagination area CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--blackColor);
   border: 1px solid var(--secondColor);
   background-color: var(--whiteColor);
@@ -3389,7 +3330,7 @@ Log In Page CSS
   margin-top: 30px;
   background-color: var(--whiteColor);
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
   border-radius: 10px;
 }
 
@@ -3421,29 +3362,29 @@ Log In Page CSS
 }
 
 .login-footer-area span::before {
-  content: "";
+  content: '';
   width: 47%;
-  height: 0.5px;
+  height: .5px;
   background-color: #70707050;
   position: absolute;
   left: 0;
   top: 50%;
   z-index: 1;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .login-footer-area span::after {
-  content: "";
+  content: '';
   width: 47%;
-  height: 0.5px;
+  height: .5px;
   background-color: #70707050;
   position: absolute;
   right: 0;
   top: 50%;
   z-index: 1;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .login-footer-area button {
@@ -3482,11 +3423,7 @@ Terms & Privacy area CSS
   color: var(--mainColor);
 }
 
-.terms h1,
-.terms h2,
-.terms h3,
-.terms h4,
-.terms h5 {
+.terms h1, .terms h2, .terms h3, .terms h4, .terms h5 {
   margin-top: 25px;
   margin-bottom: 15px;
   font-family: var(--fontFamily);
@@ -3549,7 +3486,7 @@ Terms & Privacy area CSS
 }
 
 .terms .payment li::before {
-  content: "";
+  content: '';
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -3625,7 +3562,7 @@ Sidebar Area CSS
 .sidebar-card {
   padding: 25px;
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
   background-color: var(--whiteColor);
   border-radius: 5px;
 }
@@ -3689,8 +3626,8 @@ Sidebar Area CSS
 .search-box .btn {
   border-radius: 0px;
   color: var(--whiteColor);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: var(--mainColor);
 }
 
@@ -3760,11 +3697,11 @@ Inner Projects Area CSS
 }
 
 .service-card-4::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 0%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   left: 0;
@@ -3774,8 +3711,8 @@ Inner Projects Area CSS
 
 .service-card-4 .service-card-4-text {
   opacity: 0;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   padding: 0px 25px 25px 0px;
   position: absolute;
   width: 100%;
@@ -3813,8 +3750,8 @@ Inner Projects Area CSS
 .service-card-4:hover .service-card-4-text {
   opacity: 1;
   padding-left: 25px;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
 }
 
 /*================================================ 
@@ -3851,13 +3788,13 @@ Blog Details Page CSS
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   border-radius: 0px;
   padding: 3px 15px 15px 15px;
   background-color: #f9fafb;
@@ -3896,8 +3833,8 @@ Blog Details Page CSS
 }
 
 .blog-text-footer .tag-area ul li:hover {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   color: var(--mainColor);
 }
 
@@ -3916,16 +3853,16 @@ Blog Details Page CSS
   color: var(--mainColor);
   background-color: white;
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .blog-text-footer .social-icons ul li a:hover {
@@ -4024,7 +3961,7 @@ Blog Details Page CSS
   top: 50%;
   left: 30px;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .blog-quote p {
@@ -4061,11 +3998,11 @@ Contact Page CSS
   margin-top: 30px;
   padding: 30px 20px 30px 100px;
   position: relative;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: var(--whiteColor);
   -webkit-box-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
 }
 
 .contact-card i {
@@ -4077,14 +4014,14 @@ Contact Page CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--whiteColor);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: var(--mainColor);
   position: absolute;
   left: 25px;
@@ -4158,30 +4095,30 @@ Contact Page CSS
 @-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0 #00aa55b9;
-    box-shadow: 0 0 0 0 #00aa55b9;
+            box-shadow: 0 0 0 0 #00aa55b9;
   }
   70% {
     -webkit-box-shadow: 0 0 0 10px #00aa554f;
-    box-shadow: 0 0 0 10px #00aa554f;
+            box-shadow: 0 0 0 10px #00aa554f;
   }
   100% {
     -webkit-box-shadow: 0 0 0 0 #00aa5500;
-    box-shadow: 0 0 0 0 #00aa5500;
+            box-shadow: 0 0 0 0 #00aa5500;
   }
 }
 
 @keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0 #00aa55b9;
-    box-shadow: 0 0 0 0 #00aa55b9;
+            box-shadow: 0 0 0 0 #00aa55b9;
   }
   70% {
     -webkit-box-shadow: 0 0 0 10px #00aa554f;
-    box-shadow: 0 0 0 10px #00aa554f;
+            box-shadow: 0 0 0 10px #00aa554f;
   }
   100% {
     -webkit-box-shadow: 0 0 0 0 #00aa5500;
-    box-shadow: 0 0 0 0 #00aa5500;
+            box-shadow: 0 0 0 0 #00aa5500;
   }
 }
 /*# sourceMappingURL=style.css.map */
